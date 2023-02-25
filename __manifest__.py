@@ -5,7 +5,7 @@
     'sequence': 1,
     'summary': '',
     'description': """""",
-    'depends': ['web', 'stock', 'mrp'],
+    'depends': ['web', 'mrp', 'stock', ],
     'data': [],
     'demo': [],
     'installable': True,
