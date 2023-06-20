@@ -6,7 +6,7 @@ class StockPickingInherit(models.Model):
 
     x_check_x = fields.Boolean(string='Check X')
     x_check_y = fields.Boolean(string='Check Y')
-    x_check_z = fields.Boolean(string='Check Z')
+    # x_check_z = fields.Boolean(string='Check Z')
 
 
 class StockMoveInherit(models.Model):
