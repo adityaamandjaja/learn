@@ -6,7 +6,9 @@
     'summary': '',
     'description': """""",
     'depends': ['web', 'mrp', 'stock', ],
-    'data': [],
+    'data': [
+        'views/stock_views.xml',
+    ],
     'demo': [],
     'installable': True,
     'auto_install': False,

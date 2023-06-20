@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--TREE-->
+    <record id="tree_stock_picking_custom" model="ir.ui.view">
+        <field name="name">tree.stock.picking.custom</field>
+        <field name="model">stock.picking</field>
+        <field name="arch" type="xml">
+            <tree string="Stock Picking Custom">
+                <field name="x_check_x"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="tree_stock_picking_custom_other" model="ir.ui.view">
+        <field name="name">tree.stock.picking.custom.other</field>
+        <field name="model">stock.picking</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="learn.tree_stock_picking_custom"/>
+        <field name="arch" type="xml">
+            <field name="x_check_x" position="after">
+                <field name="x_check_y"/>
+                <field name="x_check_z"/>
+            </field>
+        </field>
+    </record>
+</odoo>
