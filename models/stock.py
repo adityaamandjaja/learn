@@ -1,5 +1,6 @@
 from odoo import api, fields, models, _
 
+
 class StockMoveInherit(models.Model):
     _inherit = 'stock.move'
 
@@ -7,3 +8,11 @@ class StockMoveInherit(models.Model):
         print('_action_confirm stock_move learn')
         res = super(StockMoveInherit, self)._action_confirm(merge=merge, merge_into=merge_into)
         return res
+
+
+class StockQuantInherit(models.Model):
+    _inherit = 'stock.quant'
+
+    def get_quant_data(self):
+        print('masuk get_data stock_quant')
+        return True
